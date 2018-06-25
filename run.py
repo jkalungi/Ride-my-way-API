@@ -3,7 +3,7 @@ from app import app
 
 @app.route('/', methods=['GET'])
 def index():
-    return ('welcome')
+    return ('Get ride')
 
 
 if __name__ == '__main__':
