@@ -6,23 +6,23 @@ class MyEndpointTests(BaseTestCase):
 
     def test_manyoffers(self):
 
-        val = self.check_manyoffers();
+        val = self.check_manyoffers()
 
         sift = val.get_json()
 
         semisift = sift[1]
         finalsift = semisiftt["status"]
 
-   self.assertequal(finalsift["code"], 600)
+self.assertequal(finalsift["code"], 600)
 
 
-   def test-singleoffer(self):
+def test_singleoffer(self):
 
-       val = self.check_singleoffer(1000);
+       val = self.check_singleoffer(1000)
 
        sift = val.get_json()
 
        semisift = sift[1]
-       finalsift = semisift["status"
-       
-       self.assertEqual(finalsift["code"], 600)     
+       finalsift = semisift["status"]
+
+self.assertequal(finalsift["code"], 600)    

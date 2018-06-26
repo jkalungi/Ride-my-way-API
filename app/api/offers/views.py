@@ -1,10 +1,15 @@
-from app.models import offers
-
 from flask import jsonify, make_response
 from flask_restful import Resource
+from app.api.offers.helper import help_send_offers,help_send_oneoffer
 
-class PushOffers(Resource):
+class pushoffers(Resource):
     def get(self):
-        data = {"offers_many":offers}
+        return help_send_offers()
+
+class pushsingleoffers(Resource):
+    def get(self,id):
+        return help_send_oneoffer
+
+
 
 
