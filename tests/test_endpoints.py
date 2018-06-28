@@ -1,12 +1,13 @@
 import json
+
 from tests.base import BaseTestCase
 
-class MyEndpointTests(BaseTestCase):
+class MyEndpointTest(BaseTestCase):
 
 
-    def test_manyoffers(self):
+    def test_offers(self):
 
-        val = self.check_manyoffers()
+        val = self.check_offers()
 
         sift = val.get_json()
 

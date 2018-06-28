@@ -1,7 +1,8 @@
 import unittest
 import json
 from app import app
-from app.config import app_config
+from app import app_config
+from app.api.offers.views import pushoffers, pushsingleoffers
 
 
 class BaseTestCase(unittest.TestCase):
@@ -16,8 +17,8 @@ class BaseTestCase(unittest.TestCase):
 
         return app
 
-        def setup(self):
-            #pass
+        def setUp(self):
+             #pass
             self.client = app.test_client(self)
             app.config.from_object(app_config["testing"])
 
@@ -25,6 +26,8 @@ class BaseTestCase(unittest.TestCase):
                 """
                 Drop the data structure data
                 """
+                pushoffers[:] = []
+                pushsingleoffers[:] = []
 
                 def check_manyoffers(self):
                     send = self.client.get('/api/v1/rides',content_type='application/json')
