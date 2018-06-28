@@ -32,6 +32,6 @@ class BaseTestCase(unittest.TestCase):
                 def check_manyoffers(self):
                     send = self.client.get('/api/v1/rides',content_type='application/json')
                     return send
-                    def check_singleoffers(self, id):
+                    def check_singleoffers(self,id):
                         send = self.client.get('/api/v1/rides/{}'.format(id),content_type='application/json')
                         return send
