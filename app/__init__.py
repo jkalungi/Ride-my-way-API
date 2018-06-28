@@ -16,7 +16,5 @@ app.config.from_object(app_config["development"])
 from app.api.offers import cont
 app.register_blueprint(cont)
 
-# from .api.user import user
-# app.register_blueprint(user)
-# from .api.request import request
-# app.register_blueprint(request)
+from .api.requests import requests
+app.register_blueprint(requests)

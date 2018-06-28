@@ -11,19 +11,6 @@ offers =[{
 "msg":"there are available ride offers this week which are convienient and comfortable for you at any time of need. " 
 }
 ]
-requests =[{
-    "id":102,
-    "request title":"title",
-    "request description":"description",
-    "date":"date"
-},
-{
-    "id":103,
-    "request title":"title",
-    "request description":"description",
-    "date":"date"
-}
-]
 response_msg = {
     "code":600,
     "message":"successful"

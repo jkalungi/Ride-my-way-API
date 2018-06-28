@@ -36,5 +36,11 @@ class BaseTestCase(unittest.TestCase):
                             send = self.client.post('/api/v1/rides'content_type='application/json')
                             return send
                             def check_createrequests(self,id):
-                                send = self.client.post('/api/v1/rides/<rideId>/request'content_type='application/json')
+                                send = self.client.post('/api/v1/rides/request{}'.format(id),content_type='application/json')
                                 return send
+
+
+
+
+if __name__ == ‘__main__’:
+      unittest.main() 

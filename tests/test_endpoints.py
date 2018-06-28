@@ -26,7 +26,8 @@ def test_singleoffer(self):
        semisift = sift[1]
        finalsift = semisift["status"]
 
-self.assertequal(finalsift["code"], 600)    
+self.assertequal(finalsift["code"], 600)  
+
 
 def test_requests(self):
 
