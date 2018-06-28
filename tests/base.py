@@ -1,7 +1,7 @@
 import unittest
 import json
 from app import app
-from app import app_config
+from app.config import app_config
 
 
 class BaseTestCase(unittest.TestCase):

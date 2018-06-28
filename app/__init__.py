@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_restful import Api
-from .config import app_config
+from app.config import app_config
 
 def create_app():
     # Initialize flask app
