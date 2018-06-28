@@ -8,7 +8,7 @@ class pushoffers(Resource):
 
 class pushsingleoffers(Resource):
     def get(self,id):
-        return help_send_oneoffer
+        return help_send_oneoffer(id)
 
 
 
