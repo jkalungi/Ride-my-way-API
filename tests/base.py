@@ -12,7 +12,7 @@ class BaseTestCase(unittest.TestCase):
         app.config.from_object(app_config["testing"])
         # app.run(port = 5000)
         # self.client = app.test_client(self)
-        # self.app_context.push()
+    
 
         return app
 
@@ -32,10 +32,4 @@ class BaseTestCase(unittest.TestCase):
                     def check_singleoffers(self,id):
                         send = self.client.get('/api/v1/rides/{}'.format(id),content_type='application/json')
                         return send
-                       
-
-
-
-
-if __name__ == ‘__main__’:
-      unittest.main() 
+        

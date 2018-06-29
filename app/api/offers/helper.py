@@ -2,8 +2,6 @@ from flask import jsonify, make_response
 from app.api.models.models import offers, response_msg, response_fail
 from flask import jsonify, make_response
 
-
-
 def help_send_offers():
     content = jsonify([{'content':offers},{'status':response_msg}])
     return content
