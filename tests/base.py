@@ -32,12 +32,7 @@ class BaseTestCase(unittest.TestCase):
                     def check_singleoffers(self,id):
                         send = self.client.get('/api/v1/rides/{}'.format(id),content_type='application/json')
                         return send
-                        def check_requests(self):
-                            send = self.client.post('/api/v1/rides'content_type='application/json')
-                            return send
-                            def check_createrequests(self,id):
-                                send = self.client.post('/api/v1/rides/request{}'.format(id),content_type='application/json')
-                                return send
+                       
 
 
 

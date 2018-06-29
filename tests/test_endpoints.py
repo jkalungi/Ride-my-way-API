@@ -29,24 +29,3 @@ def test_singleoffer(self):
 self.assertequal(finalsift["code"], 600)  
 
 
-def test_requests(self):
-
-    val = self.check_requests(1000)
-
-    sift = val.get_json()
-
-    semisift = sift[1]
-    finalsift = semisift["status"]
-
-    self.assertequal(finalsift["code"], 600)
-
-    def test_createrequests(self):
-
-        val = self.check_createrequests(1000)
-
-        sift = val.get_json()
-
-        semisift = sift[1]
-        finalsift = semisift["status"]
-        
-        self.assertequal(finalsift["code"], 600)

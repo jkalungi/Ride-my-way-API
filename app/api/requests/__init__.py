@@ -1,6 +1,6 @@
 from flask import Blueprint
 from flask_restful import Api
-from api.requests.views import createrideoffer, requestride
+from app.api.requests.views import createrideoffer, requestride
 
 requests = Blueprint('requests',__name__)
 my_app = Api(requests)
